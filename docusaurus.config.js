@@ -12,7 +12,7 @@ module.exports = {
       title: 'Mol LeArt',
       logo: {
         alt: 'Mol LeArt Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -22,7 +22,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Mol-LeArt',
           label: 'GitHub',
           position: 'right',
         },
