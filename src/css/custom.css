@@ -24,6 +24,8 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+/* Add custom fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -34,3 +36,18 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
+
+.navbar__title {
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* Delete logo image */
+
+.navbar__logo {
+  display: none;
+}
+
+/* Delete logo image */
+
+

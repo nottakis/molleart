@@ -16,7 +16,7 @@ module.exports = {
       title: 'Mol LeArt',
       logo: {
         alt: 'Mol LeArt Logo',
-        src: 'img/logo.png',
+        src: '',
       },
       items: [
         {
