@@ -7,6 +7,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Mol LeArt', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+  ],
   themeConfig: {
     navbar: {
       title: 'Mol LeArt',
