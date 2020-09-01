@@ -48,10 +48,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Override background image of hero */
+/* Define hero image class */
 
-.hero {
-  background-image: url("/static/img/hero.png");
+.hero__image {
+  position: absolute;
   background-size: cover;
   background-position: center; 
 }
