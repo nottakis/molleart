@@ -56,9 +56,7 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+    <div>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <img className="hero__image" src={useBaseUrl("img/hero.png")}/>
         <div className="container" style={{ position: "relative"}}>
@@ -89,7 +87,7 @@ function Home() {
           </section>
         )}
       </main>
-    </Layout>
+    </div>
   );
 }
 
