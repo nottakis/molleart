@@ -48,6 +48,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Delete logo image */
+/* Override background image of hero */
 
-
+.hero {
+  background-image: url("/static/img/hero.png");
+  background-size: cover;
+  background-position: center; 
+}
