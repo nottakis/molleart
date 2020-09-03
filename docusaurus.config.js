@@ -1,6 +1,5 @@
 module.exports = {
   title: 'Mol LeArt',
-  tagline: 'The future of art sales.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
