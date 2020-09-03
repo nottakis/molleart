@@ -62,6 +62,9 @@ function Home() {
         <div className="container" style={{ position: "relative"}}>
           <h1 className="hero__title">{siteConfig.title}</h1>
         </div>
+        <div style={{ position: "absolute", top: 0, right: 0, padding: 10 }}>
+          <button class="button button--secondary">Sign in with web3</button>
+        </div>
       </header>
       <main>
         {features && features.length > 0 && (
