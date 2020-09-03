@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
+.lpfooter a {
+  font-family: 'Playfair Display', serif;
+}
+
 
 /* Delete logo image */
 
@@ -69,4 +73,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 1024px;
+}
+
+/* Style LP footer */
+
+.lpfooter {
+  display: flex;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lpfooter a {
+  padding: 0 30px;
+}
+
+.lpfooter a {
+  color: var(--ifm-heading-color);
 }

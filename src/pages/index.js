@@ -76,6 +76,23 @@ function Home() {
           </section>
         )}
       </main>
+      {/* Cf. https://facebookincubator.github.io/infima/docs/components/footer */}
+      <footer>
+        <div class="lpfooter text--center">
+          <Link to={useBaseUrl('docs/')}>
+            About
+          </Link>
+          <a target='_blank' href="https://twitter.com/MolLeArt">
+            Twitter
+          </a>
+          <a target='_blank' href="https://discord.gg/hxgBHZP">
+            Discord
+          </a>
+          <a target='_blank' href="https://github.com/Mol-LeArt">
+            Github
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
