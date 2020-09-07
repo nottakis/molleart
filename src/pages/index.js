@@ -81,7 +81,7 @@ function Home() {
       </main>
       {/* Cf. https://facebookincubator.github.io/infima/docs/components/footer */}
       <footer>
-        <div class="lpfooter text--center">
+        <div className="lpfooter text--center">
           <Link to={useBaseUrl('docs/')}>
             About
           </Link>
