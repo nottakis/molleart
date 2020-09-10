@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Power back to the artists',
-    imageUrl: 'img/burrrata1.png',
+    imageUrl: 'img/raidguild1.png',
     description: (
       <>
         Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.
@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: 'subDAO of lex_DAO',
-    imageUrl: 'img/burrrata2.png',
+    imageUrl: 'img/raidguild2.png',
     description: (
       <>
         Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.
