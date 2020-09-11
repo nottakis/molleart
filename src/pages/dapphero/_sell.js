@@ -9,10 +9,10 @@ function Sell() {
         <header>
           <div
             data-dh-feature="customContract"
-            data-dh-property-method-id="9puA"
+            data-dh-property-method-id="8qwX"
             data-dh-property-auto-invoke="false"
             data-dh-property-contract-name="lexArtWrapper"
-            data-dh-property-method-name="wrapNFT"
+            data-dh-property-method-name="makeOffer"
           >
             <section>
           <aside><section>
@@ -20,7 +20,7 @@ function Sell() {
             type="text"
             className={clsx(styles.button)}
             placeholder="address"
-            data-dh-property-method-id="9puA"
+            data-dh-property-method-id="8qwX"
             data-dh-property-input-name="tokenAddress"
           />
           </section>
@@ -29,7 +29,7 @@ function Sell() {
             type="text"
             className="button button--outline button--block button--secondary"
             placeholder="uint256"
-            data-dh-property-method-id="9puA"
+            data-dh-property-method-id="8qwX"
             data-dh-property-input-name="tokenId"
           />
           </section>
@@ -37,14 +37,23 @@ function Sell() {
           <input
             type="text"
             className={clsx(styles.button)}
-            placeholder="uint8"
-            data-dh-property-method-id="9puA"
-            data-dh-property-input-name="startingRoyalties"
+            placeholder="address"
+            data-dh-property-method-id="8qwX"
+            data-dh-property-input-name="buyer"
+          />
+          </section>
+          <section>
+          <input
+            type="text"
+            className={clsx(styles.button)}
+            placeholder="uint256"
+            data-dh-property-method-id="8qwX"
+            data-dh-property-input-name="transactionValue"
           />
           </section>
   
-          <button class="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="9puA">
-          wrapNFT
+          <button class="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="8qwX">
+            makeOffer
           </button>
           </aside></section>
           </div>
