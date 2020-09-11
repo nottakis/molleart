@@ -19,7 +19,7 @@ function Buy() {
           <input
             type="text"
             className={clsx(styles.button)}
-            placeholder="address"
+            placeholder="tokenAddress"
             data-dh-property-method-id="8I_L"
             data-dh-property-input-name="tokenAddress"
           />
@@ -28,7 +28,7 @@ function Buy() {
           <input
             type="text"
             className="button button--outline button--block button--secondary"
-            placeholder="uint256"
+            placeholder="tokenId"
             data-dh-property-method-id="8I_L"
             data-dh-property-input-name="tokenId"
           />

@@ -19,7 +19,7 @@ function Scribe() {
           <input
             type="text"
             className={clsx(styles.button)}
-            placeholder="address"
+            placeholder="tokenAddress"
             data-dh-property-method-id="9puA"
             data-dh-property-input-name="tokenAddress"
           />
@@ -28,7 +28,7 @@ function Scribe() {
           <input
             type="text"
             className="button button--outline button--block button--secondary"
-            placeholder="uint256"
+            placeholder="tokenId"
             data-dh-property-method-id="9puA"
             data-dh-property-input-name="tokenId"
           />
@@ -37,7 +37,7 @@ function Scribe() {
           <input
             type="text"
             className={clsx(styles.button)}
-            placeholder="uint8"
+            placeholder="startingRoyalties"
             data-dh-property-method-id="9puA"
             data-dh-property-input-name="startingRoyalties"
           />
