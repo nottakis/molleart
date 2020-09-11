@@ -6,6 +6,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.scss';
 
+import Buy from './dapphero/_buy'
+import Gift from './dapphero/_gift'
+import Scribe from './dapphero/_scribe'
+import Sell from './dapphero/_sell'
+
 const features = [
   {
     title: 'Power back to the artists',
@@ -52,6 +57,50 @@ function Feature({imageUrl, title, description}) {
   );
 }
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+function WidgetContent() {
+  return (
+    <div>
+      <Tabs>
+        <TabList className="tabs tabs--block">
+          <Tab className="tabs__item">Scribe</Tab>
+          <Tab className="tabs__item">Sell</Tab>
+          <Tab className="tabs__item">Buy</Tab>
+          <Tab className="tabs__item">Gift</Tab>
+        </TabList>
+        <TabPanel>
+          <Scribe/>
+        </TabPanel>
+        <TabPanel>
+          <Sell/>
+        </TabPanel>
+        <TabPanel>
+          <Buy/>
+        </TabPanel>
+        <TabPanel>
+          <Gift/>
+        </TabPanel>
+      </Tabs>
+    </div>
+  )
+}
+
+function Widget() {
+  return (
+    <div class="container">
+      <div class="row">
+        <div class="col col--6">
+          <img src={useBaseUrl("img/scribe.gif")} />
+        </div>
+        <div class="col col--6">
+          <WidgetContent/>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
@@ -63,7 +112,9 @@ function Home() {
           <h1 className="hero__title">{siteConfig.title}</h1>
         </div>
         <div style={{ position: "absolute", top: 0, right: 0, padding: 10 }}>
-          <button class="button button--secondary">Sign in with web3</button>
+          <button class="button button--secondary" data-dh-feature="network" data-dh-property-enable="true">
+              Connect your account
+          </button>
         </div>
       </header>
       <main>
@@ -78,6 +129,9 @@ function Home() {
             </div>
           </section>
         )}
+        <section className={styles.features}>
+          <Widget/>
+        </section>
       </main>
       {/* Cf. https://facebookincubator.github.io/infima/docs/components/footer */}
       <footer>
