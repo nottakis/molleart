@@ -1,3 +1,6 @@
+
+const path = require('path');
+
 module.exports = {
   title: 'Mol LeArt',
   url: 'https://your-docusaurus-test-site.com',
@@ -89,5 +92,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ['docusaurus-plugin-sass', path.resolve(__dirname, 'src/plugins/dapphero.js')],
 };
