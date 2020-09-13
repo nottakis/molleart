@@ -18,7 +18,7 @@ function Sell() {
           <aside><section>
           <input
             type="text"
-            className={clsx(styles.button)}
+            className={clsx(styles.input)}
             placeholder="tokenAddress"
             data-dh-property-method-id="8qwX"
             data-dh-property-input-name="tokenAddress"
@@ -27,7 +27,7 @@ function Sell() {
           <section>
           <input
             type="text"
-            className="button button--outline button--block button--secondary"
+            className={clsx(styles.input)}
             placeholder="tokenId"
             data-dh-property-method-id="8qwX"
             data-dh-property-input-name="tokenId"
@@ -36,7 +36,7 @@ function Sell() {
           <section>
           <input
             type="text"
-            className={clsx(styles.button)}
+            className={clsx(styles.input)}
             placeholder="buyer"
             data-dh-property-method-id="8qwX"
             data-dh-property-input-name="buyer"
@@ -45,7 +45,7 @@ function Sell() {
           <section>
           <input
             type="text"
-            className={clsx(styles.button)}
+            className={clsx(styles.input)}
             placeholder="transactionValue"
             data-dh-property-method-id="8qwX"
             data-dh-property-input-name="transactionValue"
