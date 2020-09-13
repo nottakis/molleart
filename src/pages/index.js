@@ -62,7 +62,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 function WidgetContent() {
   return (
     <div>
-      <Tabs forceRenderTabPanel>
+      <Tabs 
+        forceRenderTabPanel
+        selectedTabClassName="tabs__item--active">
         <TabList className="tabs tabs--block">
           <Tab className="tabs__item">Scribe</Tab>
           <Tab className="tabs__item">Sell</Tab>
