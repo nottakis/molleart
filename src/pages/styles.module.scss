@@ -52,3 +52,15 @@
     color: var(--ifm-heading-color);
   }
 }
+
+
+/* Style Tabs */
+
+:global .react-tabs {
+  &__tab-panel {
+    display: none;
+    &--selected {
+      display: initial;
+    }
+  }
+}

@@ -62,17 +62,17 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 function WidgetContent() {
   return (
     <div>
-      <Tabs>
+      <Tabs forceRenderTabPanel>
         <TabList className="tabs tabs--block">
           <Tab className="tabs__item">Scribe</Tab>
-          {/* <Tab className="tabs__item">Sell</Tab>
+          <Tab className="tabs__item">Sell</Tab>
           <Tab className="tabs__item">Buy</Tab>
-          <Tab className="tabs__item">Gift</Tab> */}
+          <Tab className="tabs__item">Gift</Tab>
         </TabList>
         <TabPanel>
           <Scribe/>
         </TabPanel>
-        {/* <TabPanel>
+        <TabPanel>
           <Sell/>
         </TabPanel>
         <TabPanel>
@@ -80,7 +80,7 @@ function WidgetContent() {
         </TabPanel>
         <TabPanel>
           <Gift/>
-        </TabPanel> */}
+        </TabPanel>
       </Tabs>
     </div>
   )
