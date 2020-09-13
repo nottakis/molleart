@@ -11,51 +11,7 @@ import Gift from './dapphero/_gift'
 import Scribe from './dapphero/_scribe'
 import Sell from './dapphero/_sell'
 
-const features = [
-  {
-    title: 'Power back to the artists',
-    imageUrl: 'img/raidguild1.png',
-    description: (
-      <>
-        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.
-      </>
-    ),
-  },
-  {
-    title: 'subDAO of lex_DAO',
-    imageUrl: 'img/raidguild2.png',
-    description: (
-      <>
-        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.
-      </>
-    ),
-  },
-  {
-    title: 'Web3 creative commons',
-    imageUrl: 'img/logo.png',
-    description: (
-      <>
-        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.
-        
-      </>
-    ),
-  },
-];
-
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
+import Features from '../components/Features/Features'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -120,20 +76,8 @@ function Home() {
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-        <section className={styles.features}>
-          <Widget/>
-        </section>
+        <Features/>
+        <Widget/>
       </main>
       {/* Cf. https://facebookincubator.github.io/infima/docs/components/footer */}
       <footer>
