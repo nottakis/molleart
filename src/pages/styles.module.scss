@@ -5,25 +5,6 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem 0;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Style LP footer */
 
 .lpfooter {
@@ -37,17 +18,5 @@
     
     padding: 0 30px;
     color: var(--ifm-heading-color);
-  }
-}
-
-
-/* Style Tabs */
-
-:global .react-tabs {
-  &__tab-panel {
-    display: none;
-    &--selected {
-      display: initial;
-    }
   }
 }

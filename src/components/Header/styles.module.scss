@@ -17,31 +17,3 @@
     padding: 2rem 0;
   }
 }
-
-/* Style LP footer */
-
-.lpfooter {
-  display: flex;
-  padding: 2rem 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  a {
-    font-family: 'Playfair Display', serif;
-    
-    padding: 0 30px;
-    color: var(--ifm-heading-color);
-  }
-}
-
-
-/* Style Tabs */
-
-:global .react-tabs {
-  &__tab-panel {
-    display: none;
-    &--selected {
-      display: initial;
-    }
-  }
-}
