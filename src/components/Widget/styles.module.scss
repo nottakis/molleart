@@ -16,4 +16,8 @@
   .tabs__item {
     font-family: 'Playfair Display', serif;
   }
+
+  .tabs--block {
+    flex-direction: row;
+  }
 }
