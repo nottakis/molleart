@@ -15,7 +15,7 @@ function Sell() {
             data-dh-property-method-name="makeOffer"
           >
             <section>
-          <aside><section>
+          <aside className={clsx(styles.aside)}><section>
           <input
             type="text"
             className={clsx(styles.input)}

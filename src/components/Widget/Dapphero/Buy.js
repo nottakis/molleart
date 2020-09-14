@@ -15,7 +15,7 @@ function Buy() {
             data-dh-property-method-name="acceptOffer"
           >
             <section>
-          <aside><section>
+          <aside className={clsx(styles.aside)}><section>
           <input
             type="text"
             className={clsx(styles.input)}
