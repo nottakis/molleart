@@ -2,29 +2,17 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.scss';
 
+import Header from '../components/Header/Header'
 import Features from '../components/Features/Features'
 import Widget from '../components/Widget/Widget'
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
   return (
     <div>
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <img className="hero__image" src={useBaseUrl("img/hero.png")}/>
-        <div className="container" style={{ position: "relative"}}>
-          <h1 className="hero__title">{siteConfig.title}</h1>
-        </div>
-        <div style={{ position: "absolute", top: 0, right: 0, padding: 10 }}>
-          <button class="button button--secondary" data-dh-feature="network" data-dh-property-enable="true">
-              Connect your account
-          </button>
-        </div>
-      </header>
+      <Header/>
       <main>
         <Features/>
         <Widget/>
