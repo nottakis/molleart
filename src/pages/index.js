@@ -6,58 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.scss';
 
-import Buy from './dapphero/_buy'
-import Gift from './dapphero/_gift'
-import Scribe from './dapphero/_scribe'
-import Sell from './dapphero/_sell'
-
 import Features from '../components/Features/Features'
-
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
-function WidgetContent() {
-  return (
-    <div>
-      <Tabs 
-        forceRenderTabPanel
-        selectedTabClassName="tabs__item--active">
-        <TabList className="tabs tabs--block">
-          <Tab className="tabs__item">Scribe</Tab>
-          <Tab className="tabs__item">Sell</Tab>
-          <Tab className="tabs__item">Buy</Tab>
-          <Tab className="tabs__item">Gift</Tab>
-        </TabList>
-        <TabPanel>
-          <Scribe/>
-        </TabPanel>
-        <TabPanel>
-          <Sell/>
-        </TabPanel>
-        <TabPanel>
-          <Buy/>
-        </TabPanel>
-        <TabPanel>
-          <Gift/>
-        </TabPanel>
-      </Tabs>
-    </div>
-  )
-}
-
-function Widget() {
-  return (
-    <div class="container">
-      <div class="row">
-        <div class="col col--6">
-          <img src={useBaseUrl("img/scribe.gif")} />
-        </div>
-        <div class="col col--6">
-          <WidgetContent/>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Widget from '../components/Widget/Widget'
 
 function Home() {
   const context = useDocusaurusContext();
