@@ -14,6 +14,10 @@ module.exports = {
     "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+    },
     navbar: {
       title: 'Mol LeArt',
       logo: {
@@ -21,17 +25,17 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/Mol-LeArt',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   to: 'docs/',
+        //   activeBasePath: 'docs',
+        //   label: 'Docs',
+        //   position: 'left',
+        // },
+        // {
+        //   href: 'https://github.com/Mol-LeArt',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
