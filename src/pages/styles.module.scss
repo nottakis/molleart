@@ -4,19 +4,3 @@
  * CSS files with the .module.scss suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-/* Style LP footer */
-
-.lpfooter {
-  display: flex;
-  padding: 2rem 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  a {
-    font-family: 'Playfair Display', serif;
-    
-    padding: 0 30px;
-    color: var(--ifm-heading-color);
-  }
-}
