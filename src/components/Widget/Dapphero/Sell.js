@@ -52,7 +52,7 @@ function Sell() {
           />
           </section>
   
-          <button class="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="8qwX">
+          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="8qwX">
             makeOffer
           </button>
           </aside></section>

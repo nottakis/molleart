@@ -43,7 +43,7 @@ function Scribe() {
           />
           </section>
   
-          <button class="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="9puA">
+          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="9puA">
           wrapNFT
           </button>
           </aside></section>

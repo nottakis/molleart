@@ -42,12 +42,12 @@ function WidgetContent() {
 
 function Widget() {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="col col--6">
+      <div className="container">
+        <div className="row">
+          <div className="col col--6">
             <img src={useBaseUrl("img/scribe.gif")} />
           </div>
-          <div class="col col--6">
+          <div className="col col--6">
             <WidgetContent/>
           </div>
         </div>

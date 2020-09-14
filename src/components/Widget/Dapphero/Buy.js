@@ -43,7 +43,7 @@ function Buy() {
           />
           </section>
   
-          <button class="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="8I_L">
+          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="8I_L">
           acceptOffer
           </button>
           </aside></section>

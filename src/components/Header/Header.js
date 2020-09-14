@@ -16,7 +16,7 @@ function Header() {
           <h1 className="hero__title">{siteConfig.title}</h1>
         </div>
         <div style={{ position: "absolute", top: 0, right: 0, padding: 10 }}>
-          <button class="button button--secondary" data-dh-feature="network" data-dh-property-enable="true">
+          <button className="button button--secondary" data-dh-feature="network" data-dh-property-enable="true">
               Connect your account
           </button>
         </div>
