@@ -12,7 +12,7 @@ function Home() {
     <div>
       <Header/>
       <main>
-        <Features/>
+        {/* <Features/> */}
         <Widget/>
       </main>
       <Footer/>
