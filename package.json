@@ -16,6 +16,7 @@
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "docusaurus-plugin-sass": "git+https://github.com/slorber/docusaurus-plugin-sass.git#patch-1",
+    "ethers": "^5.0.13",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-tabs": "^3.1.1"
