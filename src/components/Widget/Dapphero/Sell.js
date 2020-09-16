@@ -3,10 +3,45 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.scss';
 
+import { ethers, Contract } from "ethers";
+
 function Sell() {
 
   const [addressOfToken, setAddressOfToken] = useState("")
   const [tokenId, setTokenId] = useState("")
+  const [buttonElement, setButtonElement] = useState("")
+
+  const approve = async (addressOfToken, tokenId) => {
+
+      // A Web3Provider wraps a standard Web3 provider, which is
+      // what Metamask injects as window.ethereum into each page
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+    
+      // The Metamask plugin also allows signing transactions to
+      // send ether and pay to change state within the blockchain.
+      // For this, we need the account signer...
+      const signer = provider.getSigner()
+    
+      const abi  = [
+        // Some details about the token
+        "function approve(address to, uint256 tokenId) public",
+      ];
+    
+      // Get contract
+      const contractOfToken = new Contract(addressOfToken, abi, provider)
+    
+      // Get signer
+      const signerOfToken = contractOfToken.connect(signer)
+    
+      // Execute transaction
+      const addressOfScribe = "0xF9bB0a5d5962c756A7E93f4A4a536c1dD5117559"
+      try {
+        await signerOfToken.approve(addressOfScribe, tokenId)
+        buttonElement.click()
+      } catch {
+        buttonElement.click()
+      }
+    }
 
     return (
       <div>
@@ -60,9 +95,17 @@ function Sell() {
           />
           </section>
   
-          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="_usF">
+          <button className={clsx(styles.hidden, "button button--block button--primary")} 
+                  ref={button => setButtonElement(button)}
+                  data-dh-property-invoke="true" 
+                  data-dh-property-method-id="_usF">
             makeOffer
           </button>
+
+          <button className="button button--block button--primary" onClick={() => approve(addressOfToken, tokenId)}>
+            makeOffer
+          </button>
+          
           </aside></section>
           </div>
         </header>
