@@ -1,9 +1,21 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.scss';
 
 function Sell() {
+
+  const [addressOfToken, setAddressOfToken] = useState("")
+  const [tokenId, setTokenId] = useState("")
+
+  const onSetAddressOfToken = (e) => {
+    setAddressOfToken(e.target.value)
+  }
+
+  const onSetTokenId = (e) => {
+    setTokenId(e.target.value)
+  }
+
     return (
       <div>
         <header>
@@ -22,6 +34,8 @@ function Sell() {
             placeholder="tokenAddress"
             data-dh-property-method-id="_usF"
             data-dh-property-input-name="tokenAddress"
+            onChange={onSetAddressOfToken}
+            value={addressOfToken}
           />
           </section>
           <section>
@@ -31,6 +45,8 @@ function Sell() {
             placeholder="tokenId"
             data-dh-property-method-id="_usF"
             data-dh-property-input-name="tokenId"
+            onChange={onSetTokenId}
+            value={tokenId}
           />
           </section>
           <section>
