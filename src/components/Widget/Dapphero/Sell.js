@@ -15,7 +15,7 @@ function Sell() {
 
       // A Web3Provider wraps a standard Web3 provider, which is
       // what Metamask injects as window.ethereum into each page
-      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const provider = new ethers.providers.Web3Provider(web3.currentProvider)
     
       // The Metamask plugin also allows signing transactions to
       // send ether and pay to change state within the blockchain.
