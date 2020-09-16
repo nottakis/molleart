@@ -8,14 +8,6 @@ function Sell() {
   const [addressOfToken, setAddressOfToken] = useState("")
   const [tokenId, setTokenId] = useState("")
 
-  const onSetAddressOfToken = (e) => {
-    setAddressOfToken(e.target.value)
-  }
-
-  const onSetTokenId = (e) => {
-    setTokenId(e.target.value)
-  }
-
     return (
       <div>
         <header>
@@ -34,7 +26,7 @@ function Sell() {
             placeholder="tokenAddress"
             data-dh-property-method-id="_usF"
             data-dh-property-input-name="tokenAddress"
-            onChange={onSetAddressOfToken}
+            onChange={e => setAddressOfToken(e.target.value)}
             value={addressOfToken}
           />
           </section>
@@ -45,7 +37,7 @@ function Sell() {
             placeholder="tokenId"
             data-dh-property-method-id="_usF"
             data-dh-property-input-name="tokenId"
-            onChange={onSetTokenId}
+            onChange={e => setTokenId(e.target.value)}
             value={tokenId}
           />
           </section>
