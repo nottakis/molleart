@@ -14,7 +14,7 @@ function Chart() {
       <div className={styles.chart}>
         <ResponsiveBar
           data={data}
-          keys={['Alice', 'Bob', 'Cathy', 'Darren', 'Emily', 'Frank']}
+          keys={['Frank', 'Emily', 'Darren', 'Cathy', 'Bob', 'Alice']}
           indexBy="order"
           margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
           padding={0.3}
@@ -60,7 +60,7 @@ function Chart() {
               tickSize: 5,
               tickPadding: 5,
               tickRotation: 0,
-              legend: 'Order of Transactions',
+              legend: 'Order of Transaction',
               legendPosition: 'middle',
               legendOffset: 32
           }}
