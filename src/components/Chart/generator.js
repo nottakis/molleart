@@ -35,9 +35,12 @@ for (const i in orders) {
   console.log("--")
   // Pushing
   const obj = owners.reduce((acc, elem, index) => {
-    const royalty = getCurrentDistributionRate(index) * getCurrentPrice(i)
-    const fixedRoyalty = (Math.round(royalty * 100) / 100).toFixed(2);
-    acc[elem] = fixedRoyalty // or what ever object you want inside
+    let royalty = getCurrentDistributionRate(index) * getCurrentPrice(i)
+    royalty = (Math.round(royalty * 100) / 100).toFixed(2);
+    if (index > i) {
+      royalty = 0
+    }
+    acc[elem] = royalty // or what ever object you want inside
     return acc
   }, {})
   console.log(obj)
