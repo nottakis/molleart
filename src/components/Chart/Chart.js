@@ -77,8 +77,17 @@ function Chart() {
               tickRotation: 0,
               legend: 'Total Earnings',
               legendPosition: 'middle',
-              legendOffset: -40
+              legendOffset: -50,
+              format: value =>
+                `$${Number(value).toLocaleString('en-US', {
+                    minimumFractionDigits: 0,
+                })}`,
           }}
+            tooltipFormat={value =>
+                `$${Number(value).toLocaleString('en-US', {
+                    minimumFractionDigits: 0,
+                })}`
+            }
           labelSkipWidth={12}
           labelSkipHeight={12}
           labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
