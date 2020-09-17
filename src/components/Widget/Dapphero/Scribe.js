@@ -42,7 +42,7 @@ function Scribe() {
             className={clsx(styles.input)}
             placeholder="startingRoyalties"
             data-dh-property-method-id="zSIv"
-            data-dh-property-input-name="startingRoyalties"
+            data-dh-property-input-name="startingRoyalties(8~20)"
             value={value}
             onChange={e => update(e.target.value)}
           />

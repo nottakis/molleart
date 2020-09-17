@@ -14,7 +14,7 @@ function Chart() {
 
     const [value, update] = useGlobalState('startingRoyalities');
     // const [data] = useGlobalState('data');
-    const data = getData()
+    const data = getData(value)
 
   return (
     <div className="container">

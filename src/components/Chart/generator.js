@@ -1,9 +1,12 @@
 
+function getData(value) {
+
 // Data generator
 
 const initialPrice = 100
 const flipMultiple = 1.5
-const initialDistributionRate = 0.1
+// const initialDistributionRate = 0.1
+const initialDistributionRate = parseFloat(value) / 100
 const distributionReductionRate = 0.01
 
 function getCurrentDistributionRate(round) {
@@ -50,7 +53,6 @@ for (const i in orders) {
   })
 }
 
-function getData() {
   console.log(arr)
   return arr
 }
