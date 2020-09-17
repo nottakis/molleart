@@ -3,7 +3,10 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.scss';
 
+import { useGlobalState } from '../../../store/state';
+
 function Scribe() {
+  const [value, update] = useGlobalState('startingRoyalities');
     return (
       <div>
         <header>
@@ -40,6 +43,8 @@ function Scribe() {
             placeholder="startingRoyalties"
             data-dh-property-method-id="zSIv"
             data-dh-property-input-name="startingRoyalties"
+            value={value}
+            onChange={e => update(e.target.value)}
           />
           </section>
   
