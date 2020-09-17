@@ -3,12 +3,19 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 import { ResponsiveBar } from '@nivo/bar'
-import data from './data'
+
+import { useGlobalState } from '../../store/state';
+import getData from './generator'
 
 /*
   Cf. https://nivo.rocks/bar/
 */
 function Chart() {
+
+    const [value, update] = useGlobalState('startingRoyalities');
+    // const [data] = useGlobalState('data');
+    const data = getData()
+
   return (
     <div className="container">
       <div className={styles.chart}>
