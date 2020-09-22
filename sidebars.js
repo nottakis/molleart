@@ -1,5 +1,5 @@
 module.exports = {
   someSidebar: {
-    'Getting Started': ['welcome', 'handbook', 'dao-machanics', 'flip-a-karen', 'mols-terminal'],
+    'Getting Started': ['welcome', 'handbook', 'flip-a-karen', 'dao-machanics', 'mols-terminal'],
   },
 };
