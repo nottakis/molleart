@@ -21,7 +21,7 @@ function WidgetContent() {
             <Tab className="tabs__item">Scribe</Tab>
             <Tab className="tabs__item">Sell</Tab>
             <Tab className="tabs__item">Buy</Tab>
-            {/* <Tab className="tabs__item">Gift</Tab> */}
+            <Tab className="tabs__item">Gift</Tab>
           </TabList>
           <TabPanel>
             <Scribe/>
@@ -32,9 +32,9 @@ function WidgetContent() {
           <TabPanel>
             <Buy/>
           </TabPanel>
-          {/* <TabPanel>
+          <TabPanel>
             <Gift/>
-          </TabPanel> */}
+          </TabPanel>
         </Tabs>
       </div>
     )
