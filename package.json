@@ -14,14 +14,10 @@
     "@docusaurus/core": "^2.0.0-alpha.62",
     "@docusaurus/preset-classic": "^2.0.0-alpha.62",
     "@mdx-js/react": "^1.5.8",
-    "@nivo/bar": "^0.62.0",
     "clsx": "^1.1.1",
     "docusaurus-plugin-sass": "git+https://github.com/slorber/docusaurus-plugin-sass.git#patch-1",
-    "ethers": "4.0.48",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-hooks-global-state": "^1.0.1",
-    "react-tabs": "^3.1.1"
+    "react-dom": "^16.8.4"
   },
   "browserslist": {
     "production": [

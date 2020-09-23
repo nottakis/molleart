@@ -89,6 +89,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/Mol-LeArt/mvp/edit/master/',
+          routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -96,5 +97,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['docusaurus-plugin-sass', path.resolve(__dirname, 'src/plugins/dapphero.js')],
+  plugins: ['docusaurus-plugin-sass']
 };
