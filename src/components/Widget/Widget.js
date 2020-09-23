@@ -19,8 +19,8 @@ function WidgetContent() {
           selectedTabClassName="tabs__item--active">
           <TabList className="tabs tabs--block">
             <Tab className="tabs__item">Scribe</Tab>
-            <Tab className="tabs__item">Sell</Tab>
-            <Tab className="tabs__item">Buy</Tab>
+            <Tab className="tabs__item">Update Sale</Tab>
+            <Tab className="tabs__item">Purchase</Tab>
             <Tab className="tabs__item">Gift</Tab>
           </TabList>
           <TabPanel>
