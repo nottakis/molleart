@@ -49,9 +49,9 @@ function Scribe() {
           <input
             type="text"
             className={clsx(styles.input)}
-            placeholder="startingRoyalties"
+            placeholder="startingRoyalties(8~20)"
             data-dh-property-method-id="kNQd"
-            data-dh-property-input-name="startingRoyalties(8~20)"
+            data-dh-property-input-name="startingRoyalties"
             value={value}
             onChange={e => update(e.target.value)}
           />

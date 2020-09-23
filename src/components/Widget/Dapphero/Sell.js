@@ -12,7 +12,6 @@ function Sell() {
   const [buttonElement, setButtonElement] = useState("")
 
   const approve = async (addressOfToken, tokenId) => {
-
       // A Web3Provider wraps a standard Web3 provider, which is
       // what Metamask injects as window.ethereum into each page
       const provider = new ethers.providers.Web3Provider(web3.currentProvider)
@@ -34,7 +33,7 @@ function Sell() {
       const signerOfToken = contractOfToken.connect(signer)
     
       // Execute transaction
-      const addressOfScribe = "0xF9bB0a5d5962c756A7E93f4A4a536c1dD5117559"
+      const addressOfScribe = "0x8eA6914B86fD2164EA44a16459D17f31B0B23897"
       try {
         await signerOfToken.approve(addressOfScribe, tokenId)
         buttonElement.click()
@@ -48,7 +47,7 @@ function Sell() {
         <header>
           <div
             data-dh-feature="customContract"
-            data-dh-property-method-id="JGGG"
+            data-dh-property-method-id="MPMJ"
             data-dh-property-auto-invoke="false"
             data-dh-property-contract-name="MolScribe0923"
             data-dh-property-method-name="UpdateSale"
@@ -58,8 +57,17 @@ function Sell() {
           <input
             type="text"
             className={clsx(styles.input)}
+            placeholder="ethPrice"
+            data-dh-property-method-id="MPMJ"
+            data-dh-property-input-name="ethPrice"
+          />
+          </section>
+          <section>
+          <input
+            type="text"
+            className={clsx(styles.input)}
             placeholder="tokenAddress"
-            data-dh-property-method-id="JGGG"
+            data-dh-property-method-id="MPMJ"
             data-dh-property-input-name="tokenAddress"
             onChange={e => setAddressOfToken(e.target.value)}
             value={addressOfToken}
@@ -70,7 +78,7 @@ function Sell() {
             type="text"
             className={clsx(styles.input)}
             placeholder="tokenId"
-            data-dh-property-method-id="JGGG"
+            data-dh-property-method-id="MPMJ"
             data-dh-property-input-name="tokenId"
             onChange={e => setTokenId(e.target.value)}
             value={tokenId}
@@ -81,7 +89,7 @@ function Sell() {
             type="text"
             className={clsx(styles.input)}
             placeholder="forSale"
-            data-dh-property-method-id="JGGG"
+            data-dh-property-method-id="MPMJ"
             data-dh-property-input-name="forSale"
           />
           </section>
@@ -89,7 +97,7 @@ function Sell() {
           <button className={clsx(styles.hidden, "button button--block button--primary")} 
                   ref={button => setButtonElement(button)}
                   data-dh-property-invoke="true" 
-                  data-dh-property-method-id="JGGG">
+                  data-dh-property-method-id="MPMJ">
             update sale
           </button>
 
