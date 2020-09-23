@@ -12,10 +12,10 @@ function Scribe() {
         <header>
           <div
             data-dh-feature="customContract"
-            data-dh-property-method-id="zSIv"
+            data-dh-property-method-id="kNQd"
             data-dh-property-auto-invoke="false"
-            data-dh-property-contract-name="MolScribe"
-            data-dh-property-method-name="scribeNFT"
+            data-dh-property-contract-name="MolScribe0923"
+            data-dh-property-method-name="scribe"
           >
             <section>
           <aside className={clsx(styles.aside)}><section>
@@ -23,7 +23,7 @@ function Scribe() {
             type="text"
             className={clsx(styles.input)}
             placeholder="tokenAddress"
-            data-dh-property-method-id="zSIv"
+            data-dh-property-method-id="kNQd"
             data-dh-property-input-name="tokenAddress"
           />
           </section>
@@ -32,7 +32,7 @@ function Scribe() {
             type="text"
             className={clsx(styles.input)}
             placeholder="tokenId"
-            data-dh-property-method-id="zSIv"
+            data-dh-property-method-id="kNQd"
             data-dh-property-input-name="tokenId"
           />
           </section>
@@ -40,16 +40,34 @@ function Scribe() {
           <input
             type="text"
             className={clsx(styles.input)}
+            placeholder="ethPrice"
+            data-dh-property-method-id="kNQd"
+            data-dh-property-input-name="ethPrice"
+          />
+          </section>
+          <section>
+          <input
+            type="text"
+            className={clsx(styles.input)}
             placeholder="startingRoyalties"
-            data-dh-property-method-id="zSIv"
+            data-dh-property-method-id="kNQd"
             data-dh-property-input-name="startingRoyalties(8~20)"
             value={value}
             onChange={e => update(e.target.value)}
           />
           </section>
+          <section>
+          <input
+            type="text"
+            className={clsx(styles.input)}
+            placeholder="forSale"
+            data-dh-property-method-id="kNQd"
+            data-dh-property-input-name="forSale"
+          />
+          </section>
   
-          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="zSIv">
-          scribeNFT
+          <button className="button button--block button--primary" data-dh-property-invoke="true" data-dh-property-method-id="kNQd">
+          scribe
           </button>
           </aside></section>
           </div>

@@ -48,10 +48,10 @@ function Sell() {
         <header>
           <div
             data-dh-feature="customContract"
-            data-dh-property-method-id="_usF"
+            data-dh-property-method-id="JGGG"
             data-dh-property-auto-invoke="false"
-            data-dh-property-contract-name="MolScribe"
-            data-dh-property-method-name="makeOffer"
+            data-dh-property-contract-name="MolScribe0923"
+            data-dh-property-method-name="UpdateSale"
           >
             <section>
           <aside className={clsx(styles.aside)}><section>
@@ -59,7 +59,7 @@ function Sell() {
             type="text"
             className={clsx(styles.input)}
             placeholder="tokenAddress"
-            data-dh-property-method-id="_usF"
+            data-dh-property-method-id="JGGG"
             data-dh-property-input-name="tokenAddress"
             onChange={e => setAddressOfToken(e.target.value)}
             value={addressOfToken}
@@ -70,7 +70,7 @@ function Sell() {
             type="text"
             className={clsx(styles.input)}
             placeholder="tokenId"
-            data-dh-property-method-id="_usF"
+            data-dh-property-method-id="JGGG"
             data-dh-property-input-name="tokenId"
             onChange={e => setTokenId(e.target.value)}
             value={tokenId}
@@ -80,30 +80,21 @@ function Sell() {
           <input
             type="text"
             className={clsx(styles.input)}
-            placeholder="buyer"
-            data-dh-property-method-id="_usF"
-            data-dh-property-input-name="buyer"
-          />
-          </section>
-          <section>
-          <input
-            type="text"
-            className={clsx(styles.input)}
-            placeholder="transactionValue"
-            data-dh-property-method-id="_usF"
-            data-dh-property-input-name="transactionValue"
+            placeholder="forSale"
+            data-dh-property-method-id="JGGG"
+            data-dh-property-input-name="forSale"
           />
           </section>
   
           <button className={clsx(styles.hidden, "button button--block button--primary")} 
                   ref={button => setButtonElement(button)}
                   data-dh-property-invoke="true" 
-                  data-dh-property-method-id="_usF">
-            makeOffer
+                  data-dh-property-method-id="JGGG">
+            update sale
           </button>
 
           <button className="button button--block button--primary" onClick={() => approve(addressOfToken, tokenId)}>
-            makeOffer
+            update sale
           </button>
           
           </aside></section>
